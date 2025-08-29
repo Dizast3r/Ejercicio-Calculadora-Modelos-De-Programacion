@@ -1,4 +1,4 @@
-//Ladi Yolima Martines Quiñonez 20231020197
+//Ladi Yolima Martinez Quiñones 20231020197
 //Juan Estevan Ariza Ortiz 20241020005
 //Jorge Miguel Mendez Baron 20241020030
 package com.mycompany.ejerciciomodelos1;
