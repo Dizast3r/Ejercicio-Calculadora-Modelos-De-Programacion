@@ -16,8 +16,7 @@ public class CalculadoraAppMain {
         System.out.println("Seleccione el modo de trabajo:");
         System.out.println("1. Binario");
         System.out.println("2. Octal");
-        System.out.println("3. Decimal");
-        System.out.print("Ingrese su opción (1-3): ");
+        System.out.print("Ingrese su opción (1-2): ");
         try {
             modo = scanner.nextInt();
             // cuando se habia realizado nextInt, queda el resultado volando en el escaner cuando se vuelva a llamar
@@ -30,9 +29,6 @@ public class CalculadoraAppMain {
                     break;
                 case 2:
                     manejarOctal(scanner);
-                    break;
-                case 3:
-                    manejarDecimal(scanner);
                     break;
                 default:
                     System.out.println("Opción inválida, Cerrando programa...");
@@ -124,39 +120,5 @@ public class CalculadoraAppMain {
 
         //aqui se pasa otra vez a octal para mostrar el resultado :D
         System.out.println(calc.convertir());
-    }
-
-    private static void manejarDecimal(Scanner scanner) {
-        Calculadora calc = new Calculadora();
-        System.out.println("\n=== MODO DECIMAL ===");
-
-        //aqui el try catch del metodo main, tambien no es util, ya que es llamado si no se mete un double :p
-        System.out.print("Ingrese el primer número: ");
-        double num1 = scanner.nextDouble();
-        System.out.print("Ingrese el segundo número: ");
-        double num2 = scanner.nextDouble();
-
-        //aqui ya esta en decimal, no se esta convirtiendo nada
-        calc.setNumeros(num1, num2);
-
-        System.out.println("\nSeleccione la operación:");
-        System.out.println("1. Suma");
-        System.out.println("2. Resta");
-        System.out.print("Ingrese su opción: ");
-
-        String operacion = scanner.next();
-
-        if (operacion.equals("1")) {
-            calc.sumar();
-            System.out.println("\nResultado de la suma:");
-        } else if (operacion.equals("2")) {
-            calc.restar();
-            System.out.println("\nResultado de la resta:");
-        } else {
-            System.out.println("Operación inválida, Cerrando programa....");
-            return;
-        }
-
-        System.out.println(calc.resultado);
     }
 }

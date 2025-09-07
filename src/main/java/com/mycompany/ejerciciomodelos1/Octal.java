@@ -18,3 +18,4 @@ class Octal extends Calculadora {
         this.num2 = convertirADecimal(num2Oct, 8);
     }
 }
+
