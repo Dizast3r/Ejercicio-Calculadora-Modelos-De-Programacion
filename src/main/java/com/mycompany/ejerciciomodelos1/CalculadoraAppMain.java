@@ -42,7 +42,7 @@ public class CalculadoraAppMain {
     }
 
     private static void manejarBinario(Scanner scanner) {
-        Binario calc = new Binario();
+        Calculadora calc = new Binario();
         System.out.println("\n=== MODO BINARIO ===");
 
         System.out.print("Ingrese el primer número binario: ");
@@ -58,7 +58,7 @@ public class CalculadoraAppMain {
         }
 
         //aqui se pasa a decimal momentaneamente para las operaciones
-        calc.setNumerosBinarios(num1, num2);
+        ((Binario) calc).setNumerosBinarios(num1, num2);
 
         System.out.println("\nSeleccione la operación:");
         System.out.println("1. Suma");
@@ -82,7 +82,7 @@ public class CalculadoraAppMain {
     }
 
     private static void manejarOctal(Scanner scanner) {
-        Octal calc = new Octal();
+        Calculadora calc = new Octal();
         System.out.println("\n=== MODO OCTAL ===");
 
         System.out.print("Ingrese el primer número octal: ");
@@ -98,7 +98,7 @@ public class CalculadoraAppMain {
         }
 
         //aqui se colocaron como decimales pa las operaciones
-        calc.setNumerosOctales(num1, num2);
+        ((Octal) calc).setNumerosOctales(num1, num2);
 
         System.out.println("\nSeleccione la operación:");
         System.out.println("1. Suma");
