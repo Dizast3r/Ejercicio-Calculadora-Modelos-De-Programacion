@@ -1,7 +1,6 @@
 # Calculadora Binario ↔ Octal
 
-Calculadora por consola para operar números en **base binaria (2)** y **base octal (8)**. Los operandos se convierten internamente a decimal para calcular y el resultado se devuelve en la misma base de entrada. Herramienta educativa para practicar conversiones y operaciones aritméticas en distintas bases.
-
+Calculadora por consola para operar números en **base binaria (2)** y **base octal (8)**. Los operandos se convierten internamente a decimal para calcular y el resultado se devuelve en la misma base de entrada.
 ---
 
 # Autores
